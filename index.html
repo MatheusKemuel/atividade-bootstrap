@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class=" z-3">
+        <nav class="navbar navbar-expand-lg m-4 rounded-5 px-3 border shadow">
+            <div class="container-fluid">
+
+                <a class="navbar-brand me-auto" href="#">
+                    <img src="./assets/Logo Saborê Restaurante.png" alt="Saborê Restaurante" width="100"
+                        class="rounded-5">
+                </a>
+
+                <!-- Checkbox que controla o menu -->
+                <input type="checkbox" id="menu-toggle">
+
+                <!-- Ícone hambúrguer e X -->
+                <label for="menu-toggle" class="menu-icon">
+                    <svg class="icon-menu" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                        fill="none" stroke="green" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 5h16" />
+                        <path d="M4 12h16" />
+                        <path d="M4 19h16" />
+                    </svg>
+
+                    <svg class="icon-close" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                        viewBox="0 0 24 24" fill="none" stroke="green" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M18 6 6 18" />
+                        <path d="m6 6 12 12" />
+                    </svg>
+                </label>
+
+                <!-- Menu controlado pelo checkbox -->
+                <div class="navbar-menu">
+                    <ul class="navbar-nav ms-auto d-flex gap-4 align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#inicio">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre">Cardápio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cardapio">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Dashboard</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero row mx-auto d-flex justify-content-center align-items-center">
+            <figure class="col-lg-5 h-100 order-2 order-lg-1 mt-4">
+                <img src="./assets/alghozy-SSUjQmUXLlg-unsplash.png" alt="" class="w-100 h-100 object-fit-cover">
+            </figure>
+            <div class="col-lg-5  order-1 order-lg-2">
+                <h1 class="">Saborê</h1>
+                <p class="fs-3">Seu restaurante favorito, a um click.</p>
+                <div class="row gap-2">
+                    <a href="" class="btn btn-primary px-5 py-2 fs-3 w-100 col-sm"><i class="bi bi-fork-knife mx-2"></i>Pratos</a>
+                    <a href="" class="btn btn-secondary px-5 py-2 fs-3 w-100 col"><i class="bi bi-table mx-2"></i>Dashboard</a>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+</body>
+
+</html>
