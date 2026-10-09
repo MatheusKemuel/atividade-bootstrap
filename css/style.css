@@ -1,3 +1,7 @@
+nav {
+    background-color: white;
+}
+
 .login-button {
     background-color: #009970;
     color: #FFF;
@@ -85,6 +89,47 @@
     width: 100%;
     visibility: visible;
 }
+
+
+.hero {
+    height: 450px;
+}
+
+h1 {
+    font-size: 64px;
+    color: #009970;
+}
+
+.btn-primary {
+    background-color: #009970;
+    border: none;
+    color: white;
+    border: 1px solid #009970;
+    transition: .3s;
+
+    &:hover {
+        background-color: white;
+        border: 1px solid #009970;
+        color: #009970;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Desktop: menu horizontal */
 @media (min-width: 992px) {
