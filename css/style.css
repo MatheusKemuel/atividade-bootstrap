@@ -1,0 +1,109 @@
+.login-button {
+    background-color: #009970;
+    color: #FFF;
+    transition: .3s;
+
+    &:hover {
+        background-color: #00bd8a;
+    }
+}
+
+.navbar-toggler:focus,
+.btn-close:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
+/* Esconde o checkbox visualmente */
+#menu-toggle {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Ícone do menu */
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.icon-close {
+    display: none;
+}
+
+/* Menu mobile fechado */
+.navbar-menu {
+    display: none;
+    flex-basis: 100%;
+    width: 100%;
+}
+
+/* Links na vertical */
+.navbar-menu .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+}
+
+/* Checkbox marcado: abre o menu */
+#menu-toggle:checked ~ .navbar-menu {
+    display: block;
+}
+
+/* Troca o hambúrguer pelo X */
+#menu-toggle:checked + .menu-icon .icon-menu {
+    display: none;
+}
+
+#menu-toggle:checked + .menu-icon .icon-close {
+    display: block;
+}
+
+/* Animação dos links */
+.nav-link {
+    position: relative;
+    color: black;
+}
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #009970;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-link:hover::before {
+    width: 100%;
+    visibility: visible;
+}
+
+/* Desktop: menu horizontal */
+@media (min-width: 992px) {
+
+    .menu-icon {
+        display: none;
+    }
+
+    .navbar-menu {
+        display: flex;
+        flex-basis: auto;
+        width: auto;
+    }
+
+    .navbar-menu .navbar-nav {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        padding: 0;
+    }
+}
+
