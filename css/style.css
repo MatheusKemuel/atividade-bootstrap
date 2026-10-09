@@ -106,6 +106,7 @@ h1 {
     color: white;
     border: 1px solid #009970;
     transition: .3s;
+    width: 100%;
 
     &:hover {
         background-color: white;
