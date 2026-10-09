@@ -90,10 +90,69 @@ nav {
     visibility: visible;
 }
 
-
+/* HERO */
 .hero {
-    height: 450px;
+    height: auto;
+    min-height: 450px;
+    padding: 3rem 1rem;
+    overflow: hidden;
 }
+
+.hero-figure {
+    width: 100%;
+}
+
+.hero-img {
+    display: block;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.hero-titulo {
+    color: #009970;
+    font-size: clamp(2.8rem, 5vw, 4rem);
+    font-weight: 700;
+}
+
+.hero-descricao {
+    font-size: clamp(1.15rem, 2vw, 1.5rem);
+    line-height: 1.6;
+    color: #333;
+    max-width: 480px;
+}
+
+.hero-btn {
+    width: auto;
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 12px 18px;
+    font-size: 1.1rem;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* Ajustes para tablets e celulares */
+@media (max-width: 991.98px) {
+    .hero {
+        min-height: auto;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .hero-descricao {
+        margin-inline: auto;
+    }
+
+    .hero-img {
+        height: 320px;
+    }
+}
+
 
 h1 {
     font-size: 64px;
@@ -129,10 +188,113 @@ h1 {
     margin: 0 auto;
 }
 
+
+
+
 .badge {
     background-color: #9cb004;
     padding: 5px 15px;
     border-radius: 0 10px 10px 0;
+}
+
+
+
+
+
+
+
+.secao-precos {
+    background-color: #f8f5ed;
+}
+
+.precos-subtitulo {
+    color: #009970;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.precos-titulo {
+    color: #15190f;
+    font-family: Georgia, serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: bold;
+}
+
+.precos-descricao {
+    max-width: 550px;
+    color: #666;
+    line-height: 1.7;
+}
+
+/* Contêiner da tabela */
+
+.tabela-container {
+    border-radius: 12px;
+    border: 1px solid #e4dfd2;
+    background-color: #fff;
+    box-shadow: 0 8px 30px rgba(21, 25, 15, 0.07);
+}
+
+/* Cabeçalho */
+
+.tabela-container thead th {
+    background-color: #15190f;
+    color: #f8f5ed;
+    padding: 20px 18px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    white-space: nowrap;
+    border-bottom: 3px solid #d9a83e;
+}
+
+.tabela-container tbody td {
+    padding: 18px;
+    color: #181711;
+}
+
+.tabela-container .table-striped>tbody>tr:nth-of-type(odd)>* {
+    --bs-table-bg-type: #f8f5ed;
+}
+
+.tabela-container .table-hover>tbody>tr:hover>* {
+    --bs-table-bg-state: #eee8d9;
+}
+
+.prato-nome {
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.prato-descricao {
+    display: block;
+    color: #777;
+    font-size: 0.82rem;
+    line-height: 1.5;
+}
+
+.categoria-badge {
+    background-color: #e9efdc;
+    color: #315b36;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.preco-valor {
+    color: #009970 !important;
+    font-size: 1rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.status-disponivel {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #287447;
+    font-size: 0.85rem;
+    white-space: nowrap;
 }
 
 
@@ -147,9 +309,6 @@ h1 {
 
 
 
-
-
-/* Desktop: menu horizontal */
 @media (min-width: 992px) {
 
     .menu-icon {
@@ -168,7 +327,7 @@ h1 {
         gap: 10px;
         padding: 0;
     }
-    
+
 }
 
 @media (max-width: 992px) {

@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <header class=" z-3">
+    <header class="">
         <nav class="navbar navbar-expand-lg m-4 rounded-5 px-3 border shadow">
             <div class="container-fluid">
 
@@ -21,10 +21,10 @@
                         class="rounded-5">
                 </a>
 
-                <!-- Checkbox que controla o menu -->
+                
                 <input type="checkbox" id="menu-toggle">
 
-                <!-- Ícone hambúrguer e X -->
+             
                 <label for="menu-toggle" class="menu-icon">
                     <svg class="icon-menu" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
                         fill="none" stroke="green" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -41,7 +41,7 @@
                     </svg>
                 </label>
 
-                <!-- Menu controlado pelo checkbox -->
+              
                 <div class="navbar-menu">
                     <ul class="navbar-nav ms-auto d-flex gap-4 align-items-center">
                         <li class="nav-item">
@@ -64,18 +64,18 @@
     </header>
 
     <main>
-        <section class="container-fluid hero row mx-auto d-flex justify-content-center align-items-center h-100">
-            <figure class="col-lg-5 h-100 order-2 order-lg-1 mt-4">
-                <img src="./assets/alghozy-SSUjQmUXLlg-unsplash.png" alt="" class="w-100 h-100 object-fit-cover">
-            </figure>
-            <div class="col-lg-5  order-1 order-lg-2">
-                <h1 class="">Saborê</h1>
-                <p class="fs-3">Seu restaurante favorito, a um click.</p>
-                <div class="row gap-2">
-                    <a href="#pratos" class="btn btn-primary px-5 py-2 fs-3 w-100 col-sm"><i
-                            class="bi bi-fork-knife mx-2"></i>Pratos</a>
-                    <a href="" class="btn btn-secondary px-5 py-2 fs-3 w-100 col"><i
-                            class="bi bi-table mx-2"></i>Dashboard</a>
+        <section id="inicio" class="hero container-fluid py-5">
+            <div class="row align-items-center justify-content-center g-4 g-lg-5"> 
+                <figure class="hero-figure col-12 col-lg-5 mb-0 order-2 order-lg-1"> <img
+                        src="./assets/alghozy-SSUjQmUXLlg-unsplash.png" alt="Prato preparado pelo restaurante Saborê"
+                        class="hero-img w-100 rounded-4"> </figure> 
+                <div class="hero-content col-12 col-lg-5 order-1 order-lg-2">
+                    <h1 class="hero-titulo mb-3">Saborê</h1>
+                    <p class="hero-descricao mb-4"> Seu restaurante favorito, a um clique de distância. </p>
+                    <div class="hero-botoes d-flex flex-column flex-sm-row gap-3"> <a href="#pratos"
+                            class="btn btn-primary hero-btn"> <i class="bi bi-fork-knife me-2"></i> Pratos </a> <a
+                            href="#precos" class="btn btn-secondary hero-btn"> <i class="bi bi-table me-2"></i> Preços
+                        </a> </div>
                 </div>
             </div>
         </section>
@@ -110,9 +110,8 @@
                                     class="badge mb-2 position-absolute start-0 top-0">Almoço</span>
                             </div>
                             <h5 class="card-title fw-bold">Macarrão ao Molho</h5>
-                            <p>Massa preparada com molho saboroso e temperos especiais.</p> 
-                            <a href="#"
-                                class="btn btn-primary mt-auto fw-medium">Saiba mais</a>
+                            <p>Massa preparada com molho saboroso e temperos especiais.</p>
+                            <a href="#" class="btn btn-primary mt-auto fw-medium">Saiba mais</a>
                         </div>
                     </div> <!-- Prato 3 -->
                     <div class="col-12 col-md-6 col-lg-3">
@@ -123,10 +122,9 @@
                                         alt="Pizza com queijo e ingredientes variados"> </figure> <span
                                     class="badge mb-2 position-absolute start-0 top-0">Jantar</span>
                             </div>
-                            <h5 class="card-title fw-bold">Pizza Especial</h5> 
+                            <h5 class="card-title fw-bold">Pizza Especial</h5>
                             <p>Massa artesanal com queijo derretido e ingredientes selecionados.</p>
-                            <a href="#"
-                                class="btn btn-primary mt-auto fw-medium">Saiba mais</a>
+                            <a href="#" class="btn btn-primary mt-auto fw-medium">Saiba mais</a>
                         </div>
                     </div> <!-- Prato 4 -->
                     <div class="col-12 col-md-6 col-lg-3">
@@ -137,10 +135,9 @@
                                         alt="Sushi japonês"> </figure> <span
                                     class="badge mb-2 position-absolute start-0 top-0">Oriental</span>
                             </div>
-                            <h5 class="card-title fw-bold">Combo de Sushi</h5> 
+                            <h5 class="card-title fw-bold">Combo de Sushi</h5>
                             <p>Seleção de sushis frescos com sabores tradicionais da culinária japonesa.</p>
-                            <a href="#"
-                                class="btn btn-primary mt-auto fw-medium">Saiba mais</a>
+                            <a href="#" class="btn btn-primary mt-auto fw-medium">Saiba mais</a>
                         </div>
                     </div> <!-- Prato 5 -->
                     <div class="col-12 col-md-6 col-lg-3">
@@ -151,10 +148,9 @@
                                         alt="Carnes grelhadas com acompanhamentos"> </figure> <span
                                     class="badge mb-2 position-absolute start-0 top-0">Churrasco</span>
                             </div>
-                            <h5 class="card-title fw-bold">Churrasco Misto</h5> 
+                            <h5 class="card-title fw-bold">Churrasco Misto</h5>
                             <p>Carnes grelhadas no ponto certo, acompanhadas de muito sabor.</p>
-                            <a href="#"
-                                class="btn btn-primary mt-auto fw-medium">Saiba mais</a>
+                            <a href="#" class="btn btn-primary mt-auto fw-medium">Saiba mais</a>
                         </div>
                     </div> <!-- Prato 6 -->
                     <div class="col-12 col-md-6 col-lg-3">
@@ -165,10 +161,9 @@
                                         alt="Hambúrguer com queijo e salada"> </figure> <span
                                     class="badge mb-2 position-absolute start-0 top-0">Lanche</span>
                             </div>
-                            <h5 class="card-title fw-bold">Hambúrguer Artesanal</h5> 
+                            <h5 class="card-title fw-bold">Hambúrguer Artesanal</h5>
                             <p>Hambúrguer suculento com queijo, salada e molho especial.</p>
-                            <a href="#"
-                                class="btn btn-primary mt-auto fw-medium">Saiba mais</a>
+                            <a href="#" class="btn btn-primary mt-auto fw-medium">Saiba mais</a>
                         </div>
                     </div> <!-- Prato 7 -->
                     <div class="col-12 col-md-6 col-lg-3">
@@ -179,10 +174,9 @@
                                         alt="Pizza assada com queijo"> </figure> <span
                                     class="badge mb-2 position-absolute start-0 top-0">Favorito</span>
                             </div>
-                            <h5 class="card-title fw-bold">Pizza de Calabresa</h5> 
+                            <h5 class="card-title fw-bold">Pizza de Calabresa</h5>
                             <p>Pizza com calabresa temperada, queijo derretido e molho de tomate.</p>
-                            <a href="#"
-                                class="btn btn-primary mt-auto fw-medium">Saiba mais</a>
+                            <a href="#" class="btn btn-primary mt-auto fw-medium">Saiba mais</a>
                         </div>
                     </div> <!-- Prato 8 -->
                     <div class="col-12 col-md-6 col-lg-3">
@@ -193,10 +187,9 @@
                                         alt="Tigela de lámen com acompanhamentos"> </figure> <span
                                     class="badge mb-2 position-absolute start-0 top-0">Oriental</span>
                             </div>
-                            <h5 class="card-title fw-bold">Lámen Japonês</h5> 
+                            <h5 class="card-title fw-bold">Lámen Japonês</h5>
                             <p>Macarrão servido em caldo aromático com acompanhamentos tradicionais.</p>
-                            <a href="#"
-                                class="btn btn-primary mt-auto fw-medium">Saiba mais</a>
+                            <a href="#" class="btn btn-primary mt-auto fw-medium">Saiba mais</a>
                         </div>
                     </div> <!-- Prato 9 -->
                     <div class="col-12 col-md-6 col-lg-3">
@@ -207,10 +200,9 @@
                                         alt="Prato de vegetais frescos"> </figure> <span
                                     class="badge mb-2 position-absolute start-0 top-0">Saudável</span>
                             </div>
-                            <h5 class="card-title fw-bold">Bowl de Vegetais</h5> 
+                            <h5 class="card-title fw-bold">Bowl de Vegetais</h5>
                             <p>Refeição leve com vegetais frescos e uma combinação nutritiva.</p>
-                            <a href="#"
-                                class="btn btn-primary mt-auto fw-medium">Saiba mais</a>
+                            <a href="#" class="btn btn-primary mt-auto fw-medium">Saiba mais</a>
                         </div>
                     </div> <!-- Prato 10 -->
                     <div class="col-12 col-md-6 col-lg-3">
@@ -221,10 +213,9 @@
                                         alt="Hambúrguer preparado com ingredientes frescos"> </figure> <span
                                     class="badge mb-2 position-absolute start-0 top-0">Especial</span>
                             </div>
-                            <h5 class="card-title fw-bold">Burger da Casa</h5> 
+                            <h5 class="card-title fw-bold">Burger da Casa</h5>
                             <p>Hambúrguer exclusivo com ingredientes selecionados e molho especial.</p>
-                            <a href="#"
-                                class="btn btn-primary mt-auto fw-medium">Saiba mais</a>
+                            <a href="#" class="btn btn-primary mt-auto fw-medium">Saiba mais</a>
                         </div>
                     </div> <!-- Prato 11 -->
                     <div class="col-12 col-md-6 col-lg-3">
@@ -235,10 +226,9 @@
                                         alt="Macarrão com ervas e molho"> </figure> <span
                                     class="badge mb-2 position-absolute start-0 top-0">Italiano</span>
                             </div>
-                            <h5 class="card-title fw-bold">Pasta ao Pesto</h5> 
+                            <h5 class="card-title fw-bold">Pasta ao Pesto</h5>
                             <p>Massa envolvida em molho pesto aromático com ervas frescas.</p>
-                            <a href="#"
-                                class="btn btn-primary mt-auto fw-medium">Saiba mais</a>
+                            <a href="#" class="btn btn-primary mt-auto fw-medium">Saiba mais</a>
                         </div>
                     </div> <!-- Prato 12 -->
                     <div class="col-12 col-md-6 col-lg-3">
@@ -249,15 +239,290 @@
                                         alt="Prato elaborado de restaurante"> </figure> <span
                                     class="badge mb-2 position-absolute start-0 top-0">Premium</span>
                             </div>
-                            <h5 class="card-title fw-bold">Prato do Chef</h5> 
-                            <p>Uma criação especial que combina ingredientes selecionados e apresentação sofisticada.</p>
-                            <a href="#"
-                                class="btn btn-primary mt-auto fw-medium">Saiba mais</a>
+                            <h5 class="card-title fw-bold">Prato do Chef</h5>
+                            <p>Uma criação especial que combina ingredientes selecionados e apresentação sofisticada.
+                            </p>
+                            <a href="#" class="btn btn-primary mt-auto fw-medium">Saiba mais</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+     
+        <section id="precos" class="secao-precos py-5 my-5">
+            <div class="container">
+
+                <div class="text-center mb-5">
+                    <span class="precos-subtitulo">
+                        <i class="bi bi-journal-text"></i>
+                        NOSSO CARDÁPIO
+                    </span>
+
+                    <h2 class="precos-titulo mt-2">
+                        Preços dos pratos
+                    </h2>
+
+                    <p class="precos-descricao mx-auto">
+                        Confira nossos pratos e descubra novos sabores
+                        preparados especialmente para você.
+                    </p>
+                </div>
+
+              
+                <div class="table-responsive tabela-container">
+                    <table class="table table-striped table-hover align-middle mb-0">
+
+                        <thead>
+                            <tr>
+                                <th scope="col">Prato</th>
+                                <th scope="col" class="d-none d-md-table-cell">
+                                    Categoria
+                                </th>
+                                <th scope="col" class="text-end">
+                                    Preço
+                                </th>
+                                <th scope="col" class="text-center">
+                                    Disponibilidade
+                                </th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="prato-nome">Salada Tropical</div>
+                                    <small class="prato-descricao">
+                                        Vegetais frescos e ingredientes selecionados
+                                    </small>
+                                </td>
+                                <td class="d-none d-md-table-cell">
+                                    <span class="badge categoria-badge">Entrada</span>
+                                </td>
+                                <td class="text-end preco-valor">R$ 24,90</td>
+                                <td class="text-center">
+                                    <span class="status-disponivel">
+                                        <i class="bi bi-check-circle-fill"></i>
+                                        Disponível
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="prato-nome">Macarrão ao Molho</div>
+                                    <small class="prato-descricao">
+                                        Massa com molho especial da casa
+                                    </small>
+                                </td>
+                                <td class="d-none d-md-table-cell">
+                                    <span class="badge categoria-badge">Massas</span>
+                                </td>
+                                <td class="text-end preco-valor">R$ 32,90</td>
+                                <td class="text-center">
+                                    <span class="status-disponivel">
+                                        <i class="bi bi-check-circle-fill"></i>
+                                        Disponível
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="prato-nome">Pizza Especial</div>
+                                    <small class="prato-descricao">
+                                        Queijo, molho artesanal e ingredientes frescos
+                                    </small>
+                                </td>
+                                <td class="d-none d-md-table-cell">
+                                    <span class="badge categoria-badge">Pizzas</span>
+                                </td>
+                                <td class="text-end preco-valor">R$ 49,90</td>
+                                <td class="text-center">
+                                    <span class="status-disponivel">
+                                        <i class="bi bi-check-circle-fill"></i>
+                                        Disponível
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="prato-nome">Combo de Sushi</div>
+                                    <small class="prato-descricao">
+                                        Seleção de sushis preparados na hora
+                                    </small>
+                                </td>
+                                <td class="d-none d-md-table-cell">
+                                    <span class="badge categoria-badge">Oriental</span>
+                                </td>
+                                <td class="text-end preco-valor">R$ 54,90</td>
+                                <td class="text-center">
+                                    <span class="status-disponivel">
+                                        <i class="bi bi-check-circle-fill"></i>
+                                        Disponível
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="prato-nome">Churrasco Misto</div>
+                                    <small class="prato-descricao">
+                                        Carnes grelhadas com acompanhamentos
+                                    </small>
+                                </td>
+                                <td class="d-none d-md-table-cell">
+                                    <span class="badge categoria-badge">Carnes</span>
+                                </td>
+                                <td class="text-end preco-valor">R$ 59,90</td>
+                                <td class="text-center">
+                                    <span class="status-disponivel">
+                                        <i class="bi bi-check-circle-fill"></i>
+                                        Disponível
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="prato-nome">Hambúrguer Artesanal</div>
+                                    <small class="prato-descricao">
+                                        Carne, queijo, salada e molho especial
+                                    </small>
+                                </td>
+                                <td class="d-none d-md-table-cell">
+                                    <span class="badge categoria-badge">Lanches</span>
+                                </td>
+                                <td class="text-end preco-valor">R$ 29,90</td>
+                                <td class="text-center">
+                                    <span class="status-disponivel">
+                                        <i class="bi bi-check-circle-fill"></i>
+                                        Disponível
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="prato-nome">Pizza de Calabresa</div>
+                                    <small class="prato-descricao">
+                                        Calabresa temperada e queijo derretido
+                                    </small>
+                                </td>
+                                <td class="d-none d-md-table-cell">
+                                    <span class="badge categoria-badge">Pizzas</span>
+                                </td>
+                                <td class="text-end preco-valor">R$ 44,90</td>
+                                <td class="text-center">
+                                    <span class="status-disponivel">
+                                        <i class="bi bi-check-circle-fill"></i>
+                                        Disponível
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="prato-nome">Lámen Japonês</div>
+                                    <small class="prato-descricao">
+                                        Caldo aromático e acompanhamentos tradicionais
+                                    </small>
+                                </td>
+                                <td class="d-none d-md-table-cell">
+                                    <span class="badge categoria-badge">Oriental</span>
+                                </td>
+                                <td class="text-end preco-valor">R$ 39,90</td>
+                                <td class="text-center">
+                                    <span class="status-disponivel">
+                                        <i class="bi bi-check-circle-fill"></i>
+                                        Disponível
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="prato-nome">Bowl de Vegetais</div>
+                                    <small class="prato-descricao">
+                                        Refeição leve com vegetais frescos
+                                    </small>
+                                </td>
+                                <td class="d-none d-md-table-cell">
+                                    <span class="badge categoria-badge">Saudável</span>
+                                </td>
+                                <td class="text-end preco-valor">R$ 27,90</td>
+                                <td class="text-center">
+                                    <span class="status-disponivel">
+                                        <i class="bi bi-check-circle-fill"></i>
+                                        Disponível
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="prato-nome">Burger da Casa</div>
+                                    <small class="prato-descricao">
+                                        Hambúrguer exclusivo com molho especial
+                                    </small>
+                                </td>
+                                <td class="d-none d-md-table-cell">
+                                    <span class="badge categoria-badge">Lanches</span>
+                                </td>
+                                <td class="text-end preco-valor">R$ 34,90</td>
+                                <td class="text-center">
+                                    <span class="status-disponivel">
+                                        <i class="bi bi-check-circle-fill"></i>
+                                        Disponível
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="prato-nome">Pasta ao Pesto</div>
+                                    <small class="prato-descricao">
+                                        Massa com pesto e ervas frescas
+                                    </small>
+                                </td>
+                                <td class="d-none d-md-table-cell">
+                                    <span class="badge categoria-badge">Massas</span>
+                                </td>
+                                <td class="text-end preco-valor">R$ 36,90</td>
+                                <td class="text-center">
+                                    <span class="status-disponivel">
+                                        <i class="bi bi-check-circle-fill"></i>
+                                        Disponível
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="prato-nome">Prato do Chef</div>
+                                    <small class="prato-descricao">
+                                        Criação especial com ingredientes selecionados
+                                    </small>
+                                </td>
+                                <td class="d-none d-md-table-cell">
+                                    <span class="badge categoria-badge">Especial</span>
+                                </td>
+                                <td class="text-end preco-valor">R$ 64,90</td>
+                                <td class="text-center">
+                                    <span class="status-disponivel">
+                                        <i class="bi bi-check-circle-fill"></i>
+                                        Disponível
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </section>
+
     </main>
 </body>
 
