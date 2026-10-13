@@ -303,6 +303,57 @@ h1 {
 
 
 
+.dialog {
+    display: none;
+    position: fixed;
+    inset: 50% auto auto 50%;
+    margin: 0;
+    padding: 32px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #2d211b;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    width: 500px;
+}
+
+
+.dialog:target {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dialog h2 {
+
+    color: #244d32;
+}
+
+.dialog p {
+    margin-bottom: 24px;
+
+}
+
+.btn-dialog,
+.btn-fechar {
+    display: inline-block;
+    padding: 12px 22px;
+    border-radius: 6px;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    height: 45px;
+}
+
+.btn-fechar {
+    background-color: #244d32;
+}
+
+
+
+
 
 
 

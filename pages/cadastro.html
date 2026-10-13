@@ -81,35 +81,44 @@
                             <span class="input-group-text">
                                 <i class="bi bi-person-fill text-secondary"></i>
                             </span>
-                            <input type="text" id="name" class="form-control" placeholder="Digite seu nome" />
+                            <input type="text" id="name" class="form-control" placeholder="Digite seu nome" required />
                         </div>
                         <label for="email" class="form-label">Email:</label>
                         <div class="input-group mb-4">
                             <span class="input-group-text">
                                 <i class="bi bi-envelope-fill text-secondary"></i>
                             </span>
-                            <input type="text" id="email" class="form-control" placeholder="Digite seu email" />
+                            <input type="email" id="email validationCustom01" class="form-control" required
+                                aria-describedby="validationCustomEmailFeedback" placeholder="Digite seu email" />
                         </div>
+
                         <label for="password" class="form-label">Senha:</label>
                         <div class="mb-4 input-group">
                             <span class="input-group-text">
                                 <i class="bi bi-incognito text-secondary"></i>
                             </span>
-                            <input type="text" id="password" class="form-control" placeholder="Digite a senha" />
+                            <input type="password" id="password" class="form-control" placeholder="Digite a senha"
+                                pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,}"
+                                title="Use pelo menos 8 caracteres, incluindo uma letra maiúscula, uma minúscula e um número."
+                                required />
                         </div>
                         <label for="password" class="form-label">Digite a senha novamente:</label>
                         <div class="mb-4 input-group">
                             <span class="input-group-text">
                                 <i class="bi bi-incognito text-secondary"></i>
                             </span>
-                            <input type="text" id="password" class="form-control" placeholder="Digite a senha" />
+                            <input type="password" id="password" class="form-control" placeholder="Digite a senha"
+                                required />
                         </div>
                         <div class="mt-5 text-center">
-                            <button type="submit" class="btn btn-secondary">Submit</button>
+                            <button type="submit" class="btn btn-primary">Submit</button>
                         </div>
+
+                       
                     </form>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 </body>
