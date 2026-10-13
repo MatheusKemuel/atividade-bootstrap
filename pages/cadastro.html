@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+    <title>Cadastre-se</title>
+</head>
+
+<body>
+    <header class="">
+        <nav class="navbar navbar-expand-lg m-4 rounded-5 px-3 border shadow">
+            <div class="container-fluid">
+
+                <a class="navbar-brand me-auto" href="../index.html">
+                    <img src="../assets/Logo Saborê Restaurante.png" alt="Saborê Restaurante" width="100"
+                        class="rounded-5">
+                </a>
+
+
+                <input type="checkbox" id="menu-toggle">
+
+
+                <label for="menu-toggle" class="menu-icon">
+                    <svg class="icon-menu" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                        fill="none" stroke="green" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 5h16" />
+                        <path d="M4 12h16" />
+                        <path d="M4 19h16" />
+                    </svg>
+
+                    <svg class="icon-close" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                        viewBox="0 0 24 24" fill="none" stroke="green" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M18 6 6 18" />
+                        <path d="m6 6 12 12" />
+                    </svg>
+                </label>
+
+
+                <div class="navbar-menu">
+                    <ul class="navbar-nav ms-auto d-flex gap-4 align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#pratos">Cardápio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#contact">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cadastro.html">Cadastro</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <section id="cadastro">
+        <div class="container-md">
+            <div class="text-center">
+                <h2>Cadastre-se</h2>
+                <p class="lead">Faça seu cadastro preenchendo o formulário</p>
+            </div>
+
+            <div class="row justify-content-center my-5">
+                <div class="col-lg-6">
+                    <form>
+                        <label for="name" class="form-label">Nome:</label>
+                        <div class="mb-4 input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-person-fill text-secondary"></i>
+                            </span>
+                            <input type="text" id="name" class="form-control" placeholder="Digite seu nome" />
+                        </div>
+                        <label for="email" class="form-label">Email:</label>
+                        <div class="input-group mb-4">
+                            <span class="input-group-text">
+                                <i class="bi bi-envelope-fill text-secondary"></i>
+                            </span>
+                            <input type="text" id="email" class="form-control" placeholder="Digite seu email" />
+                        </div>
+                        <label for="password" class="form-label">Senha:</label>
+                        <div class="mb-4 input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-incognito text-secondary"></i>
+                            </span>
+                            <input type="text" id="password" class="form-control" placeholder="Digite a senha" />
+                        </div>
+                        <label for="password" class="form-label">Digite a senha novamente:</label>
+                        <div class="mb-4 input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-incognito text-secondary"></i>
+                            </span>
+                            <input type="text" id="password" class="form-control" placeholder="Digite a senha" />
+                        </div>
+                        <div class="mt-5 text-center">
+                            <button type="submit" class="btn btn-secondary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
